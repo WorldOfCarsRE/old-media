@@ -17,7 +17,7 @@ PATH.siteRootSecure = 'https://worldofcars.go.com';
 
 /* Config ------------------------------------------------*/
 CFG.appsSecure = 'https://apps.worldofcars.go.com'; // http on dev, https on qa/live
-CFG.apps = CFG.ssl ? CFG.appsSecure : 'http://localhost:8011';
+CFG.apps = CFG.ssl ? CFG.appsSecure : 'http://localhost:7900';
 CFG.appsProxy = ( CFG.ssl ? PATH.siteRootSecure : PATH.siteRoot ) +'/apps';
 CFG.carsDSSecure = CFG.appsSecure +'/carsds';
 CFG.carsDS = CFG.apps +'/carsds';
