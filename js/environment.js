@@ -13,7 +13,6 @@ PATH.swf = PATH.cdn +'/swf';
 PATH.xml = PATH.cdn +'/xml';
 PATH.siteRoot = 'http://localhost:8011';
 PATH.siteRootSecure = 'https://worldofcars.go.com';
-PATH.apiRoot = 'http://localhost:8014'
 /*--------------------------------------------------------*/
 
 /* Config ------------------------------------------------*/
@@ -42,12 +41,12 @@ CFG.commerce = 'https://register.go.com/commerce/flashapi';
 CFG.eventum = CFG.apps +'/logsubmit/post.php';
 CFG.flashExpressInstall = 'http://a.dolimg.com/swf/dcom/expressInstall.swf';
 CFG.locale = 'en_US';
-CFG.login = PATH.apiRoot + '/carsds/api/AccountLoginRequest';
+CFG.login = CFG.apps + '/carsds/api/AccountLoginRequest';
 CFG.newsletterID = 'Disney_WorldofCars_NLO_102008,WDIGFamilySites';
 CFG.promotionName = 'World_Of_Cars_Online_Virtual_World';
 CFG.register = 'https://register.go.com/global/cars';
 CFG.templateId = 851;
-CFG.whoAmI = PATH.apiRoot + '/carsds/api/WhoAmIRequest';
+CFG.whoAmI = CFG.apps + '/carsds/api/WhoAmIRequest';
 
 /* Account Linking */
 CFG.psn = 'https://store.playstation.com/external'; // Playstation Network
@@ -99,10 +98,10 @@ var GAME = {
 		'minigameBaseUrl' : PATH.cdnRoot +'/game/games/',
 		'otpLoginURL' : 'localhost',
 		'otpTokenPort' : '8012',
-		'otpTokenURL' : PATH.apiRoot + '/carsds/api/GenerateTokenRequest',
-		'physicsAssetsBaseUrl' : PATH.apiRoot +'/game/assets/track_physics',
+		'otpTokenURL' : CFG.apiRoot + '/carsds/api/GenerateTokenRequest',
+		'physicsAssetsBaseUrl' : PATH.cdnRoot +'/game/assets/track_physics',
 		'promotionName' : CFG.promotionName,
-		'queueEntranceRequestUrl' : PATH.apiRoot + '/carsds/api/GameEntranceRequest',
+		'queueEntranceRequestUrl' : CFG.apiRoot + '/carsds/api/GameEntranceRequest',
 		'queueStatusRequestUrl' : PATH.siteRoot + '/carsds/api/QueueStatsRequest',
 		'rsnBaseUrl' : PATH.cdnRoot + '/config/',
 		'rsnAssetBaseURL' : CFG.assetsBaseUrl + 'flash/gui/news/',
