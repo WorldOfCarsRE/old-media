@@ -52,9 +52,9 @@
             flashvars["whoAmI"] = CFG.whoAmI;
             flashvars["errorReportUrl"] = CFG.errorReportUrl;
             flashvars["loginURL"] = CFG.login;
-            flashvars["otpTokenURL"] = CFG.otpTokenURL;
-            flashvars["otpTokenPort"] = CFG.otpTokenPort;
-            flashvars["otpLoginURL"] = CFG.otpLoginURL;
+            flashvars["otpTokenURL"] = GAME["flashVars"].otpTokenURL;
+            flashvars["otpTokenPort"] = GAME["flashVars"].otpTokenPort;
+            flashvars["otpLoginURL"] = GAME["flashVars"].otpLoginURL;
             flashvars["clientVersion"] = CFG.clientVersion;
 			flashvars["signUpNow"] = RDR.signUpNow;
             flashvars["cast"] = CFG.cast;
@@ -68,8 +68,8 @@
 			flashvars["promotionName"] = CFG.promotionName || "";
 			flashvars["templateId"] = CFG.templateId || "";
 			flashvars["customMsg"] = CFG.customMsg;
-			flashvars["rsnBaseUrl"] = CFG.rsnBaseUrl;
-			flashvars["rsnAssetBaseURL"] = CFG.rsnAssetBaseURL;
+			flashvars["rsnBaseUrl"] = GAME["flashVars"].rsnBaseUrl;
+			flashvars["rsnAssetBaseURL"] = GAME["flashVars"].rsnAssetBaseURL;
 
             var params = {};
             params["bgcolor"] = bgcolor;

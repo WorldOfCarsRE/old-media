@@ -19,7 +19,7 @@ PATH.siteRootSecure = 'https://worldofcars.go.com';
 CFG.appsSecure = 'https://apps.worldofcars.go.com'; // http on dev, https on qa/live
 CFG.apps = CFG.ssl ? CFG.appsSecure : 'http://localhost:7900';
 CFG.appsProxy = ( CFG.ssl ? PATH.siteRootSecure : PATH.siteRoot ) +'/apps';
-CFG.carsDSSecure = CFG.appsSecure +'/carsds';
+CFG.carsDSSecure = CFG.appsSecure + '/carsds';
 CFG.carsDS = CFG.apps +'/carsds';
 CFG.carsDSProxy =  CFG.appsProxy +'/carsds';
 CFG.apiSecure = CFG.carsDSSecure +'/api/';
@@ -41,7 +41,7 @@ CFG.commerce = 'https://register.go.com/commerce/flashapi';
 CFG.eventum = CFG.apps +'/logsubmit/post.php';
 CFG.flashExpressInstall = 'http://a.dolimg.com/swf/dcom/expressInstall.swf';
 CFG.locale = 'en_US';
-CFG.login = CFG.apiSecure +'AccountLoginRequest';
+CFG.login = CFG.apiSecure + 'AccountLoginRequest';
 CFG.newsletterID = 'Disney_WorldofCars_NLO_102008,WDIGFamilySites';
 CFG.promotionName = 'World_Of_Cars_Online_Virtual_World';
 CFG.register = 'https://register.go.com/global/cars';
@@ -98,13 +98,13 @@ var GAME = {
 		'minigameBaseUrl' : PATH.cdnRoot +'/game/games/',
 		'otpLoginURL' : '127.0.0.1',
 		'otpTokenPort' : '443,6667,81,8080',
-		'otpTokenURL' : CFG.api +'/GenerateTokenRequest',
+		'otpTokenURL' : CFG.api + '/GenerateTokenRequest',
 		'physicsAssetsBaseUrl' : PATH.cdnRoot +'/game/assets/track_physics',
 		'promotionName' : CFG.promotionName,
 		'queueEntranceRequestUrl' : CFG.api +'/GameEntranceRequest',
 		'queueStatusRequestUrl' : CFG.api +'/QueueStatsRequest',
-		'rsnBaseUrl' : CFG.carsDS +'/now/rsn/',
-		'rsnAssetBaseURL' : CFG.assetsBaseUrl +'flash/gui/news/',
+		'rsnBaseUrl' : PATH.cdnRoot + '/config/',
+		'rsnAssetBaseURL' : CFG.assetsBaseUrl + 'flash/gui/news/',
 		'signUpNow' : RDR.signUpNow,
 		'spriteStripRendererURL' : 'http://cdn.cars.dolimg.com/worldofcars/spriterender/sprite-renderer/renderer/',
 		'templateId' : CFG.templateId,

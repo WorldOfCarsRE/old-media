@@ -1,7 +1,7 @@
 // Window Manager Class --------------------------------[MN]
 var windowManager = function( config ) {
 	var This = function() {
-		
+
 		// Public Vars
 		This._config = {
 			pages				: {},
