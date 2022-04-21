@@ -48,9 +48,9 @@
             flashvars["assetServiceHost"] = CFG.assetServiceHost;
             flashvars["carsServiceHost"] = CFG.assetServiceHost;
             flashvars["physicsAssetsBaseUrl"] = CFG.physicsAssetsBaseUrl;
-            flashvars["isoMapServiceHost"] = CFG.isoMapServiceHost;
+            flashvars["isoMapServiceHost"] = GAME["flashVars"].isoMapServiceHost;
             flashvars["whoAmI"] = CFG.whoAmI;
-            flashvars["errorReportUrl"] = CFG.errorReportUrl;
+            flashvars["errorReportUrl"] = GAME["flashVars"].errorReportUrl;
             flashvars["loginURL"] = CFG.login;
             flashvars["otpTokenURL"] = GAME["flashVars"].otpTokenURL;
             flashvars["otpTokenPort"] = GAME["flashVars"].otpTokenPort;
@@ -59,11 +59,11 @@
 			flashvars["signUpNow"] = RDR.signUpNow;
             flashvars["cast"] = CFG.cast;
             flashvars["live"] = CFG.live;
-			flashvars["vipWeekendTag"] = CFG.ipWeekendTag;
+			flashvars["vipWeekendTag"] = GAME["flashVars"].ipWeekendTag;
             flashvars["cheats"] = "true";
 			flashvars["queueEntranceRequestUrl"] = GAME["flashVars"].queueEntranceRequestUrl;
             flashvars["queueStatusRequestUrl"] = GAME["flashVars"].queueStatusRequestUrl;
-			flashvars["spriteStripRendererURL"] = CFG.spriteStripRendererURL;
+			flashvars["spriteStripRendererURL"] = GAME["flashVars"].spriteStripRendererURL;
 			flashvars["chatPermissionUrl"] = CFG.chatPermissionUrl || "";
 			flashvars["promotionName"] = CFG.promotionName || "";
 			flashvars["templateId"] = CFG.templateId || "";
