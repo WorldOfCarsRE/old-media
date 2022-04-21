@@ -26,7 +26,7 @@ CFG.apiSecure = CFG.carsDSSecure + '/api/';
 CFG.api = CFG.carsDS + '/api/';
 CFG.apiProxy = CFG.carsDSProxy + '/api/';
 CFG.dxdSecure = 'https://apps.dxd.go.com/dxd'; // live = apps.dxd.go.com
-CFG.dxd = CFG.ssl ? CFG.dxdSecure : 'http://apps.dxd.go.com/dxd'; // live = apps.dxd.go.com
+CFG.dxd = CFG.ssl ? CFG.dxdSecure : 'http://localhost:8013/dxd'; // live = apps.dxd.go.com
 CFG.swfBaseUrl = '';
 CFG.clientVersion = '1.1'; // TODO: Real version
 
@@ -35,7 +35,7 @@ CFG.ajaxLogout = CFG.apiProxy +'AccountLogoutRequest'; // same-domain logout req
 CFG.assetsBaseUrl = PATH.cdnRoot +'/game/assets/';
 CFG.assetServiceHost = CFG.carsDS +'/messagebroker/amf';
 CFG.chatPermissionUrl = CFG.dxd +'/flashAPI/sendChatPermissionEmails';
-CFG.dxdLogin = CFG.dxdSecure +'/flashAPI/login';
+CFG.dxdLogin = CFG.dxd + '/flashAPI/login';
 CFG.blogRSS = '/site/blog/cars/feed2/entries/rss';
 CFG.commerce = 'https://register.go.com/commerce/flashapi';
 CFG.eventum = CFG.apps +'/logsubmit/post.php';
@@ -141,7 +141,7 @@ var RAMP = {
 		'forgotIDURL' : CFG.register +'/recoverMemberNames?affiliateName=Disney_Cars&appRedirect=http%3A%2F%2Fworldofcars.go.com',
 		'forgotPasswordURL' : CFG.register +'/recoverPassword?affiliateName=Disney_Cars&appRedirect=http%3A%2F%2Fworldofcars.go.com',
 		'gameLogin' : CFG.login,
-		'IPDetectPath' : ( CFG.ssl ? 'https' : 'http' ) +'://tredir.go.com/capmon/GetDE',
+		'IPDetectPath' : '', // Don't think we need this. ( CFG.ssl ? 'https' : 'http' ) +'://tredir.go.com/capmon/GetDE',
 		'loaderSwfUrl' : PATH.swf +'/car_f_gui_ldr_loader.swf',
 		'loadingAnimationURL' : PATH.swf +'/car_f_gui_ldr_loader.swf',
 		'locale' : CFG.locale,
@@ -159,7 +159,7 @@ var RAMP = {
 		'statesURL' : PATH.swf +'/common/states.xml',
 		'templateId' : CFG.templateId,
 		'termsOfUseURL' : 'http://disney.go.com/corporate/privacy/terms.html?ppLink=pp_wdig',
-		'trackingManagerConfig' : PATH.swf +'/common/tracker.xml',
+		'trackingManagerConfig' : PATH.swf + '/common/tracker.xml',
 		'whoAmI' : CFG.whoAmI
 	},
 	'params' : {
@@ -232,7 +232,7 @@ RAMP.registration = {
 		'disableAssetService' : true,
 		'loginURL' : CFG.login,
 		'registrationOnly' : '',
-		'trackingManagerConfig' : PATH.swf +'/reg/tracker.xml'
+		'trackingManagerConfig' : PATH.swf + '/reg/tracker.xml'
 	} ),
 	'params' : jQuery.extend( {}, RAMP.params, {
 		'base' : PATH.swf +'/reg/',

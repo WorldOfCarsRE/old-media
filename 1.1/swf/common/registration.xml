@@ -2,24 +2,24 @@
 <config>
 	<!-- Tea Templates -->
 	<flashAPI>
-		<login>http://apps.dxd.go.com/dxd/flashAPI/login</login>
-		<createAccount>http://apps.dxd.go.com/dxd/flashAPI/createAccount</createAccount>
-		<checkUsernameAvailability>http://apps.dxd.go.com/dxd/flashAPI/checkUsernameAvailability</checkUsernameAvailability>
-		<checkUsernameApproval>http://apps.dxd.go.com/dxd/flashAPI/checkUsernameApproval</checkUsernameApproval>
-		<checkValidationStatus>http://apps.dxd.go.com/dxd/flashAPI/checkValidationStatus</checkValidationStatus>
-		<submitAliasForApproval>http://apps.dxd.go.com/dxd/flashAPI/submitAliasForApproval</submitAliasForApproval>
-		<getFamilyStructure>https://apps.dxd.go.com/dxd/flashAPI/getFamilyStructure</getFamilyStructure>
-		<verifyAccountCredentials>http://apps.dxd.go.com/dxd/flashAPI/verifyAccountCredentials</verifyAccountCredentials>
-		<linkAccountToFamily>http://apps.dxd.go.com/dxd/flashAPI/linkAccountToFamily</linkAccountToFamily>
-		<removeAccountFromFamily>http://apps.dxd.go.com/dxd/flashAPI/removeAccountFromFamily</removeAccountFromFamily>
-		<updateAccount>http://apps.dxd.go.com/dxd/flashAPI/updateAccount</updateAccount>
-		<lookupAccount>https://apps.dxd.go.com/dxd/flashAPI/lookupAccount</lookupAccount>
-		<getAllNewsletterMetadata>http://apps.dxd.go.com/dxd/flashAPI/getAllNewsletterMetadata</getAllNewsletterMetadata>
-		<notifyParent>http://apps.dxd.go.com/dxd/flashAPI/notifyParent</notifyParent>
-		<authenticateAndUpdateOptins>http://apps.dxd.go.com/dxd/flashAPI/authenticateAndUpdateOptins</authenticateAndUpdateOptins>
-		<sendChatPermissionEmails>http://apps.dxd.go.com/dxd/flashAPI/sendChatPermissionEmails</sendChatPermissionEmails>
-		<getTermsOfUseText>https://apps.dxd.go.com/dxd/flashAPI/getTermsOfUseText</getTermsOfUseText>
-		<logout>http://apps.dxd.go.com/dxd/flashAPI/logout</logout>
+		<login>http://localhost:8013/dxd/flashAPI/login</login>
+		<createAccount>http://localhost:8013/dxd/flashAPI/createAccount</createAccount>
+		<checkUsernameAvailability>http://localhost:8013/dxd/flashAPI/checkUsernameAvailability</checkUsernameAvailability>
+		<checkUsernameApproval>http://localhost:8013/dxd/flashAPI/checkUsernameApproval</checkUsernameApproval>
+		<checkValidationStatus>http://localhost:8013/dxd/flashAPI/checkValidationStatus</checkValidationStatus>
+		<submitAliasForApproval>http://localhost:8013/dxd/flashAPI/submitAliasForApproval</submitAliasForApproval>
+		<getFamilyStructure>https://localhost:8013/dxd/flashAPI/getFamilyStructure</getFamilyStructure>
+		<verifyAccountCredentials>http://localhost:8013/dxd/flashAPI/verifyAccountCredentials</verifyAccountCredentials>
+		<linkAccountToFamily>http://localhost:8013/dxd/flashAPI/linkAccountToFamily</linkAccountToFamily>
+		<removeAccountFromFamily>http://localhost:8013/dxd/flashAPI/removeAccountFromFamily</removeAccountFromFamily>
+		<updateAccount>http://localhost:8013/dxd/flashAPI/updateAccount</updateAccount>
+		<lookupAccount>https://localhost:8013/dxd/flashAPI/lookupAccount</lookupAccount>
+		<getAllNewsletterMetadata>http://localhost:8013/dxd/flashAPI/getAllNewsletterMetadata</getAllNewsletterMetadata>
+		<notifyParent>http://localhost:8013/dxd/flashAPI/notifyParent</notifyParent>
+		<authenticateAndUpdateOptins>http://localhost:8013/dxd/flashAPI/authenticateAndUpdateOptins</authenticateAndUpdateOptins>
+		<sendChatPermissionEmails>http://localhost:8013/dxd/flashAPI/sendChatPermissionEmails</sendChatPermissionEmails>
+		<getTermsOfUseText>https://localhost:8013/dxd/flashAPI/getTermsOfUseText</getTermsOfUseText>
+		<logout>http://localhost:8013/dxd/flashAPI/logout</logout>
 		<!-- purchasing -->
 		<creditCardValidation>https://register.go.com/dxd/validation/authorize</creditCardValidation>
 		<lookupSubscriptions>https://register.go.com/commerce/flashapi/lookupSubscriptions</lookupSubscriptions>
@@ -40,7 +40,7 @@
 		<whoami>http://carsdev.online.disney.com:6322/carsds/api/WhoAmIRequest</whoami>
 		<!-- /whoami service -->
 	</flashAPI>
-	
+
 	<!-- Product-specific Data -->
 	<productData>
 		<!-- <promotionName>disney_cars</promotionName> -->							<!-- formerly known as.. affiliate name -->
@@ -53,7 +53,7 @@
 		<templateID>851</templateID>										<!-- Template ID -->
 		<parentGuide>http://worldofcars.go.com/parents/</parentGuide>
 	</productData>
-	
+
 	<!-- Required Fields -->
 	<requirements>
 		<registration>
@@ -67,7 +67,7 @@
 				<parentEmail></parentEmail>
 				<agreedToTOU></agreedToTOU>
 			</child>
-			
+
 			<!-- Teen -->
 			<teen>
 				<birthday></birthday>
@@ -80,7 +80,7 @@
 				<agreedToTOU></agreedToTOU>
 				<subscribe></subscribe>
 			</teen>
-			
+
 			<!-- Adult -->
 			<adult>
 				<birthday></birthday>
@@ -115,7 +115,7 @@
 				<parentEmail></parentEmail>
 				<agreedToTOU></agreedToTOU>
 			</child>
-			
+
 			<!-- Teen -->
 			<teen>
 				<birthday></birthday>
@@ -128,7 +128,7 @@
 				<agreedToTOU></agreedToTOU>
 				<subscribe></subscribe>
 			</teen>
-			
+
 			<!-- Adult -->
 			<adult>
 				<birthday></birthday>
@@ -142,37 +142,37 @@
 				<subscribe></subscribe>
 			</adult>
 		</accountManagement>
-		
+
 	</requirements>
-		
+
 	<!-- Constants -->
 	<!-- DO NOT CHANGE THESE WITHOUT GOOD REASON - They are determined by the server!! -->
 	<constants>
 		<USERNAME_MIN_LENGTH>4</USERNAME_MIN_LENGTH>
 		<USERNAME_MAX_LENGTH>64</USERNAME_MAX_LENGTH>
-		
+
 		<DNAME_MIN_LENGTH>4</DNAME_MIN_LENGTH>
 		<DNAME_MAX_LENGTH>16</DNAME_MAX_LENGTH>
-		
+
 		<PASSWORD_MIN_LENGTH>4</PASSWORD_MIN_LENGTH>
 		<PASSWORD_MAX_LENGTH>25</PASSWORD_MAX_LENGTH>
-		
+
 		<EMAIL_MAX_LENGTH>150</EMAIL_MAX_LENGTH>
-		
+
 		<NAME_MIN_LENGTH>1</NAME_MIN_LENGTH>
 		<NAME_MAX_LENGTH>40</NAME_MAX_LENGTH>
-		
+
 		<AGE_MIN>2</AGE_MIN>
 		<AGE_TEEN>13</AGE_TEEN>
 		<AGE_OLD_TEEN>16</AGE_OLD_TEEN>
 		<AGE_ADULT>18</AGE_ADULT>
 		<AGE_MAX>100</AGE_MAX>
 	</constants>
-	
+
 	<!-- Error messages -->
 	<errors>
 		<NO_ERROR></NO_ERROR>
-		
+
 		<ACCESS_VIOLATION>You're not allowed to link to this account.</ACCESS_VIOLATION>
 		<GENERIC_INVALID_DATA>Generic Invalid Data Error</GENERIC_INVALID_DATA>
 		<REG_APPLICATION_ERROR>Account information was not saved. Please check that the form was filled out correctly.</REG_APPLICATION_ERROR>
@@ -180,7 +180,7 @@
 		<ACCOUNT_MANAGER_INIT_FAILED>Account Manager failed to initialize!</ACCOUNT_MANAGER_INIT_FAILED>
 		<USER_NOT_LOGGED_IN>User is not logged in!</USER_NOT_LOGGED_IN>
 		<USER_BANNED>You cannot login at this time because your account has been banned.</USER_BANNED>
-		
+
 		<!-- purchasing errors start-->
 		<NON_ADULT_LOGIN>Sorry, you cannot purchase a Membership at this time. For assistance, please call our toll free number at (888) KACHOWW or (888) 522-4699. Mon.-Fri. 8 a.m. to 6 p.m., Sat. 8 a.m. to 4 p.m., Sun. 10 a.m. to 6 p.m. Pacific Standard Time.</NON_ADULT_LOGIN>
 		<CC_EXPIRE_INVALID>Invalid Expiration Date.</CC_EXPIRE_INVALID>
@@ -191,7 +191,7 @@
 		<ADDRESS_STREET_INVALID>Please enter a valid street address.</ADDRESS_STREET_INVALID>
 		<ADDRESS_CITY_INVALID>Please enter a valid city.</ADDRESS_CITY_INVALID>
 		<!-- purchasing errors end-->
-	
+
 		<LOGIN_FAILED>We were unable to successfully log you in. Please try again!</LOGIN_FAILED>
 		<REGISTRATION_FAILED>Registration is unavailable at this time. Please come back again later...</REGISTRATION_FAILED>
 		<SERVER_UNAVAILABLE>Our servers have decided to take a temporary snooze! Please come back again later...</SERVER_UNAVAILABLE>
@@ -216,13 +216,13 @@
 		<DNAME_CANNOT_CONTAIN_LAST_NAME>D-Name can't contain last name</DNAME_CANNOT_CONTAIN_LAST_NAME>
 		<DNAME_CANNOT_CONTAIN_USERNAME>D-Name can't contain account ID</DNAME_CANNOT_CONTAIN_USERNAME>
 		<DNAME_CANNOT_CONTAIN_EMAIL>D-Name can't contain email</DNAME_CANNOT_CONTAIN_EMAIL>
-						
+
 		<PASSWORD_MISSING>Valid password is not provided</PASSWORD_MISSING>
 		<PASSWORD_INVALID_LENGTH>Password must have @PASSWORD_MIN_LENGTH - @PASSWORD_MAX_LENGTH characters</PASSWORD_INVALID_LENGTH>
 		<PASSWORD_ILLEGAL_CHARS>Password must have valid characters</PASSWORD_ILLEGAL_CHARS>
 		<PASSWORD_CANNOT_MATCH_USERNAME>Password can't match account ID</PASSWORD_CANNOT_MATCH_USERNAME>
 		<PASSWORDS_DO_NOT_MATCH>Passwords must match</PASSWORDS_DO_NOT_MATCH>
-		
+
 		<BIRTHDAY_MISSING>Valid birthday is not provided</BIRTHDAY_MISSING>
 		<BIRTHDAY_AGE_INVALID>Must be between @AGE_MIN - @AGE_MAX years old</BIRTHDAY_AGE_INVALID>
 		<BIRTHDAY_DATE_INVALID>Invalid Date</BIRTHDAY_DATE_INVALID>
@@ -231,20 +231,20 @@
 		<PARENT_EMAIL_MISSING>Valid parent e-mail address is not provided</PARENT_EMAIL_MISSING>
 		<EMAIL_INVALID_LENGTH>E-mail address must be less than @EMAIL_MAX_LENGTH characters</EMAIL_INVALID_LENGTH>
 		<EMAIL_INVALID>E-mail address must have valid characters</EMAIL_INVALID>
-		
+
 		<NAME_FIRST_MISSING>Valid first name is not provided</NAME_FIRST_MISSING>
 		<NAME_LAST_MISSING>Valid last name is not provided</NAME_LAST_MISSING>
 		<NAME_INVALID_LENGTH>Name must have @NAME_MIN_LENGTH - @NAME_MAX_LENGTH characters</NAME_INVALID_LENGTH>
 		<NAME_ILLEGAL_CHARS>Name must have valid characters</NAME_ILLEGAL_CHARS>
-		
+
 		<POSTAL_CODE_MISSING>Valid postal code is not provided</POSTAL_CODE_MISSING>
 		<POSTAL_CODE_INVALID>Postal code is invalid</POSTAL_CODE_INVALID>
-		
+
 		<TOU_AGREEMENT_MISSING>TOU has not been agreed to</TOU_AGREEMENT_MISSING>
-		
+
 		<TEMPLATE_ID_MISSING>Valid template ID is not provided</TEMPLATE_ID_MISSING>
 	</errors>
-	
+
 	<!-- Cancel reason in alphabetical order -->
 	<cancelReasons>
 		<CHAT_POLICY name="Chat Policy">Chat policy issue</CHAT_POLICY>
