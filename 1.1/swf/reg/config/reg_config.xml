@@ -7,12 +7,12 @@
 			<className>com.disney.cars.reg.ui.dialogs.RegCreateAccountExisting</className>
 			<label>LOGIN</label>
 		</dialog>
-		
+
 		<dialog>
 			<className>com.disney.cars.reg.ui.dialogs.CarCreator</className>
 			<label>CAR_CREATOR</label>
 		</dialog>
-		
+
 		<dialog>
 			<className>com.disney.cars.reg.ui.dialogs.RegCreateAccount</className>
 			<label>CREATE_ACCOUNT</label>

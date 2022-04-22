@@ -3,7 +3,7 @@ var PATH = {};
 var RDR = {};
 
 /* Website base paths ------------------------------------*/
-PATH.cdnRoot = 'http://localhost:8011/media';
+PATH.cdnRoot = 'http://localhost/media';
 PATH.cdnRootSecure = 'https://cdn.cars.dolimg.com/worldofcars';
 PATH.cdn = ( CFG.ssl ? PATH.cdnRootSecure : PATH.cdnRoot ) +'/1.1';
 PATH.css = PATH.cdn +'/css';
@@ -11,7 +11,7 @@ PATH.img = PATH.cdn +'/img';
 PATH.js = PATH.cdn +'/js';
 PATH.swf = PATH.cdn +'/swf';
 PATH.xml = PATH.cdn +'/xml';
-PATH.siteRoot = 'http://localhost:8011';
+PATH.siteRoot = 'http://localhost';
 PATH.siteRootSecure = 'https://worldofcars.go.com';
 /*--------------------------------------------------------*/
 
@@ -129,7 +129,7 @@ var RAMP = {
 		'api' : CFG.api,
 		'assetsBaseUrl' : CFG.assetsBaseUrl,
 		'assetServiceHost' : CFG.assetServiceHost,
-		'autolog' : CFG.dxdLogin +'?loginType=swid$#$cacheBust=true',
+		'autolog' : CFG.dxdLogin + '?loginType=swid$#$cacheBust=true',
 		'carsServiceHost' : CFG.assetServiceHost,
 		'chatPermissionUrl' : CFG.chatPermissionUrl,
 		'childNewsletterID' : '',
@@ -143,7 +143,7 @@ var RAMP = {
 		'gameLogin' : CFG.login,
 		'IPDetectPath' : '', // Don't think we need this. ( CFG.ssl ? 'https' : 'http' ) +'://tredir.go.com/capmon/GetDE',
 		'loaderSwfUrl' : PATH.swf +'/car_f_gui_ldr_loader.swf',
-		'loadingAnimationURL' : PATH.swf +'/car_f_gui_ldr_loader.swf',
+		'loadingAnimationURL' : PATH.swf + '/car_f_gui_ldr_loader.swf',
 		'locale' : CFG.locale,
 		'login' : CFG.dxdLogin,
 		'logout' : CFG.api +'AccountLogoutRequest',
@@ -197,7 +197,7 @@ RAMP.acm = {
 // RAMP Purchase -----------------------------------------*/
 RAMP.purchase = {
 	'flashVars' : jQuery.extend( {}, RAMP.flashVars, {
-		'congratsEmailPath' : CFG.dxd +'/util/beacon/purchaseEmailRedirect',
+		'congratsEmailPath' : CFG.dxd + '/util/beacon/purchaseEmailRedirect',
 		'congratsExitURL' : PATH.siteRoot +'/welcome-member/',
 		'congratsRedirectURL' : PATH.siteRoot +'/welcome-member/',
 		'contentSwfUrl' : 'cars_purchasing_skin.swf',
@@ -219,7 +219,7 @@ RAMP.purchase = {
 		'widgetURL' : PATH.siteRootSecure +'/membership/purchase/'
 	} ),
 	'params' : jQuery.extend( {}, RAMP.params, {
-		'base' : PATH.swf +'/purchasing/',
+		'base' : PATH.swf + '/purchasing/',
 		'wmode' : 'transparent'
 	} )
 };
@@ -235,7 +235,7 @@ RAMP.registration = {
 		'trackingManagerConfig' : PATH.swf + '/reg/tracker.xml'
 	} ),
 	'params' : jQuery.extend( {}, RAMP.params, {
-		'base' : PATH.swf +'/reg/',
+		'base' : PATH.swf + '/reg/',
 		'bgColor' : '#000000'
 	} )
 };

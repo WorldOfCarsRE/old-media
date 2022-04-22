@@ -2,7 +2,7 @@
 <config>
 	<!-- Base Config -->
 
-	<libPath url="http://localhost:8011/site/stat/flash/analyticReportingAS3.swf" />
+	<libPath url="http://localhost/site/stat/flash/analyticReportingAS3.swf" />
 	<defaultInfo>
 		<account value='worldofcars' />
 		<site value='woc' />

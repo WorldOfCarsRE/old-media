@@ -8,17 +8,17 @@
 		<checkUsernameApproval>http://localhost:8013/dxd/flashAPI/checkUsernameApproval</checkUsernameApproval>
 		<checkValidationStatus>http://localhost:8013/dxd/flashAPI/checkValidationStatus</checkValidationStatus>
 		<submitAliasForApproval>http://localhost:8013/dxd/flashAPI/submitAliasForApproval</submitAliasForApproval>
-		<getFamilyStructure>https://localhost:8013/dxd/flashAPI/getFamilyStructure</getFamilyStructure>
+		<getFamilyStructure>http://localhost:8013/dxd/flashAPI/getFamilyStructure</getFamilyStructure>
 		<verifyAccountCredentials>http://localhost:8013/dxd/flashAPI/verifyAccountCredentials</verifyAccountCredentials>
 		<linkAccountToFamily>http://localhost:8013/dxd/flashAPI/linkAccountToFamily</linkAccountToFamily>
 		<removeAccountFromFamily>http://localhost:8013/dxd/flashAPI/removeAccountFromFamily</removeAccountFromFamily>
 		<updateAccount>http://localhost:8013/dxd/flashAPI/updateAccount</updateAccount>
-		<lookupAccount>https://localhost:8013/dxd/flashAPI/lookupAccount</lookupAccount>
+		<lookupAccount>http://localhost:8013/dxd/flashAPI/lookupAccount</lookupAccount>
 		<getAllNewsletterMetadata>http://localhost:8013/dxd/flashAPI/getAllNewsletterMetadata</getAllNewsletterMetadata>
 		<notifyParent>http://localhost:8013/dxd/flashAPI/notifyParent</notifyParent>
 		<authenticateAndUpdateOptins>http://localhost:8013/dxd/flashAPI/authenticateAndUpdateOptins</authenticateAndUpdateOptins>
 		<sendChatPermissionEmails>http://localhost:8013/dxd/flashAPI/sendChatPermissionEmails</sendChatPermissionEmails>
-		<getTermsOfUseText>https://localhost:8013/dxd/flashAPI/getTermsOfUseText</getTermsOfUseText>
+		<getTermsOfUseText>http://localhost:8013/dxd/flashAPI/getTermsOfUseText</getTermsOfUseText>
 		<logout>http://localhost:8013/dxd/flashAPI/logout</logout>
 		<!-- purchasing -->
 		<creditCardValidation>https://register.go.com/dxd/validation/authorize</creditCardValidation>
@@ -37,7 +37,7 @@
 		<disableAutoRenew>https://register.go.com/commerce/flashapi/disableAutoRenew</disableAutoRenew>
 	    <!-- /purchasing -->
 		<!-- whoami service -->
-		<whoami>http://carsdev.online.disney.com:6322/carsds/api/WhoAmIRequest</whoami>
+		<whoami>http://localhost:8013/carsds/api/WhoAmIRequest</whoami>
 		<!-- /whoami service -->
 	</flashAPI>
 
