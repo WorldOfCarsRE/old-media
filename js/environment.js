@@ -111,7 +111,7 @@ var GAME = {
 		'vipWeekendTag' : true,
 		'watchdog' : false,
 		'watchdogMemoryLimit' : 500,
-		'whoAmI' : CFG.api + '/WhoAmIRequest'
+		'whoAmI' : CFG.api + 'WhoAmIRequest'
 	},
 	'params' : {
 		'allowscriptaccess' : 'always',
