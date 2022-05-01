@@ -23,10 +23,10 @@ function startSWF( flashvars, params, forceRestart ) {
 		swfParams = params;
 		swfBase = params["base"];
 	}
-	
+
 	swfFlashvars["forceRestart"] = forceRestart || "false";
-	
-	swfobject.embedSWF(swfBase + "DVC_OS.swf"+ ( queryString ? '?'+ queryString : '' ), "flashDivContent", "100%", "100%", "10", "", swfFlashvars, swfParams, "", onEmbedSWF);
+
+	swfobject.embedSWF(swfBase + "DVC_OS.swf" + ( queryString ? '?'+ queryString : '' ), "flashDivContent", "100%", "100%", "10", "", swfFlashvars, swfParams, "", onEmbedSWF);
 }
 
 function onEmbedSWF(e) {
@@ -56,10 +56,10 @@ function swfTimeout() {
 
 function restartSWF() {
 	clearTimeout(swfTimer)
-	
+
 	// Remove old swf object
 	swfobject.removeSWF(swfId);
-	
+
 	// Recreate flashDivContent element
 	var container;
 	var divs = document.getElementsByTagName("div");
@@ -69,11 +69,11 @@ function restartSWF() {
 			break;
 		}
 	}
-	
+
 	var content = document.createElement("div");
 	content.setAttribute("id", "flashDivContent");
 	container.appendChild(content);
-	
+
 	// Start SWF with original parameters
 	startSWF( null, null, "true" );
 }
