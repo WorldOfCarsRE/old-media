@@ -106,7 +106,7 @@ var GAME = {
 		'rsnBaseUrl' : PATH.cdnRoot + '/config/',
 		'rsnAssetBaseURL' : CFG.assetsBaseUrl + 'flash/gui/news/',
 		'signUpNow' : RDR.signUpNow,
-		'spriteStripRendererURL' : 'http://cdn.cars.dolimg.com/worldofcars/spriterender/sprite-renderer/renderer/',
+		'spriteStripRendererURL' : 'http://127.0.0.1/worldofcars/spriterender/sprite-renderer/renderer/',
 		'templateId' : CFG.templateId,
 		'vipWeekendTag' : true,
 		'watchdog' : false,
