@@ -95,15 +95,15 @@ var GAME = {
 		'live': true,
 		'loginURL': CFG.login,
 		'mapAssetsBaseUrl': CFG.assetsBaseUrl,
-		'minigameBaseUrl': PATH.cdnRoot + '/game/games/',
-		'otpLoginURL': (CFG.SSL ? '45.61.162.168' : 'localhost'),
+		'minigameBaseUrl': PATH.cdnRootBase + '/game/games/',
+		'otpLoginURL': (CFG.ssl ? '45.61.162.168' : 'localhost'),
 		'otpTokenPort': '8012',
 		'otpTokenURL': CFG.apps + '/carsds/api/GenerateTokenRequest',
-		'physicsAssetsBaseUrl': PATH.cdnRoot + '/game/assets/track_physics',
+		'physicsAssetsBaseUrl': PATH.cdnRootBase + '/game/assets/track_physics',
 		'promotionName': CFG.promotionName,
 		'queueEntranceRequestUrl': CFG.apps + '/carsds/api/GameEntranceRequest',
 		'queueStatusRequestUrl': CFG.apps + '/carsds/api/QueueStatsRequest',
-		'rsnBaseUrl': PATH.cdnRoot + '/config/',
+		'rsnBaseUrl': PATH.cdnRootBase + '/config/',
 		'rsnAssetBaseURL': CFG.assetsBaseUrl + 'flash/gui/news/',
 		'signUpNow': RDR.signUpNow,
 		'spriteStripRendererURL': 'https://woc.sunrise.games/site/worldofcars/spriterender/sprite-renderer/renderer/',
@@ -116,7 +116,7 @@ var GAME = {
 	'params': {
 		'allowscriptaccess': 'always',
 		'bgcolor': '#0A0C0E',
-		'base': PATH.cdnRoot + '/game/',
+		'base': PATH.cdnRootBase + '/game/',
 		'menu': false
 	}
 };
