@@ -79,164 +79,164 @@ RDR.survey = PATH.siteRoot + '/thank-you/';
 
 /* Game client -------------------------------------------*/
 var GAME = {
-    'flashVars': {
-        'assetsBaseUrl': CFG.assetsBaseUrl,
-        'assetServiceHost': CFG.assetServiceHost,
-        'cacheBust': true,
-        'carsServiceHost': CFG.assetServiceHost,
-        'cast': false,
-        'chatPermissionUrl': CFG.chatPermissionUrl,
-        'cheats': true,
-        'clientVersion': window.clientVersion || false,
-        'customMsg': '',
-        'disableAssetService': true,
-        'errorReportUrl': RDR.reportabug,
-        'isoMapServiceHost': CFG.carsDS,
-        'live': true,
-        'loginURL': CFG.login,
-        'mapAssetsBaseUrl': CFG.assetsBaseUrl,
-        'minigameBaseUrl': PATH.cdnRoot + '/game/games/',
-        'otpLoginURL': (CFG.SSL ? '45.61.162.168' : 'localhost'),
-        'otpTokenPort': '8012',
-        'otpTokenURL': CFG.apps + '/carsds/api/GenerateTokenRequest',
-        'physicsAssetsBaseUrl': PATH.cdnRoot + '/game/assets/track_physics',
-        'promotionName': CFG.promotionName,
-        'queueEntranceRequestUrl': CFG.apps + '/carsds/api/GameEntranceRequest',
-        'queueStatusRequestUrl': CFG.apps + '/carsds/api/QueueStatsRequest',
-        'rsnBaseUrl': PATH.cdnRoot + '/config/',
-        'rsnAssetBaseURL': CFG.assetsBaseUrl + 'flash/gui/news/',
-        'signUpNow': RDR.signUpNow,
-        'spriteStripRendererURL': 'https://woc.sunrise.games/site/worldofcars/spriterender/sprite-renderer/renderer/',
-        'templateId': CFG.templateId,
-        'vipWeekendTag': true,
-        'watchdog': false,
-        'watchdogMemoryLimit': 500,
-        'whoAmI': CFG.api + 'WhoAmIRequest'
-    },
-    'params': {
-        'allowscriptaccess': 'always',
-        'bgcolor': '#0A0C0E',
-        'base': PATH.cdnRoot + '/game/',
-        'menu': false
-    }
+	'flashVars': {
+		'assetsBaseUrl': CFG.assetsBaseUrl,
+		'assetServiceHost': CFG.assetServiceHost,
+		'cacheBust': true,
+		'carsServiceHost': CFG.assetServiceHost,
+		'cast': false,
+		'chatPermissionUrl': CFG.chatPermissionUrl,
+		'cheats': true,
+		'clientVersion': window.clientVersion || false,
+		'customMsg': '',
+		'disableAssetService': true,
+		'errorReportUrl': RDR.reportabug,
+		'isoMapServiceHost': CFG.carsDS,
+		'live': true,
+		'loginURL': CFG.login,
+		'mapAssetsBaseUrl': CFG.assetsBaseUrl,
+		'minigameBaseUrl': PATH.cdnRoot + '/game/games/',
+		'otpLoginURL': (CFG.SSL ? '45.61.162.168' : 'localhost'),
+		'otpTokenPort': '8012',
+		'otpTokenURL': CFG.apps + '/carsds/api/GenerateTokenRequest',
+		'physicsAssetsBaseUrl': PATH.cdnRoot + '/game/assets/track_physics',
+		'promotionName': CFG.promotionName,
+		'queueEntranceRequestUrl': CFG.apps + '/carsds/api/GameEntranceRequest',
+		'queueStatusRequestUrl': CFG.apps + '/carsds/api/QueueStatsRequest',
+		'rsnBaseUrl': PATH.cdnRoot + '/config/',
+		'rsnAssetBaseURL': CFG.assetsBaseUrl + 'flash/gui/news/',
+		'signUpNow': RDR.signUpNow,
+		'spriteStripRendererURL': 'https://woc.sunrise.games/site/worldofcars/spriterender/sprite-renderer/renderer/',
+		'templateId': CFG.templateId,
+		'vipWeekendTag': true,
+		'watchdog': false,
+		'watchdogMemoryLimit': 500,
+		'whoAmI': CFG.api + 'WhoAmIRequest'
+	},
+	'params': {
+		'allowscriptaccess': 'always',
+		'bgcolor': '#0A0C0E',
+		'base': PATH.cdnRoot + '/game/',
+		'menu': false
+	}
 };
 /*--------------------------------------------------------*/
 
 /* RAMP client common ------------------------------------*/
 var RAMP = {
-    'flashVars': {
-        'adultNewsletterID': CFG.newsletterID,
-        'api': CFG.api,
-        'assetsBaseUrl': CFG.assetsBaseUrl,
-        'assetServiceHost': CFG.assetServiceHost,
-        'autolog': CFG.dxdLogin + '?loginType=swid$#$cacheBust=true',
-        'carsServiceHost': CFG.assetServiceHost,
-        'chatPermissionUrl': CFG.chatPermissionUrl,
-        'childNewsletterID': '',
-        'countriesURL': PATH.swf + '/common/countries.xml',
-        'dontModifyCloseButton': true,
-        'dxdlogout': CFG.dxd + '/flashAPI/logout',
-        'DOBCookieTO': 30,
-        'loginTimeout': 30,
-        'forgotIDURL': CFG.register + '/recoverMemberNames?affiliateName=Disney_Cars&appRedirect=http%3A%2F%2Fworldofcars.go.com',
-        'forgotPasswordURL': CFG.register + '/recoverPassword?affiliateName=Disney_Cars&appRedirect=http%3A%2F%2Fworldofcars.go.com',
-        'gameLogin': CFG.login,
-        'IPDetectPath': '', // Don't think we need this. ( CFG.ssl ? 'https' : 'http' ) +'://tredir.go.com/capmon/GetDE',
-        'loaderSwfUrl': PATH.swf + '/car_f_gui_ldr_loader.swf',
-        'loadingAnimationURL': PATH.swf + '/car_f_gui_ldr_loader.swf',
-        'locale': CFG.locale,
-        'login': CFG.dxdLogin,
-        'logout': CFG.api + 'AccountLogoutRequest',
-        'newsletterID': CFG.newsletterID,
-        'parentGuide': RDR.parents,
-        'promotionName': CFG.promotionName,
-        'privacyPolicyURL': 'http://disney.go.com/corporate/privacy/pp_wdig.html',
-        'queueEntranceRequestUrl': CFG.queueEntranceRequestUrl,
-        'queueStatusRequestUrl': CFG.queueStatusRequestUrl,
-        'recoveryPasswordURL': CFG.register + '/recoverPassword?appRedirect=' + PATH.siteRoot,
-        'recoveryUsernameURL': CFG.register + '/recoverMemberNames?appRedirect=' + PATH.siteRoot,
-        'regConfig': PATH.swf + '/common/registration.xml',
-        'statesURL': PATH.swf + '/common/states.xml',
-        'templateId': CFG.templateId,
-        'termsOfUseURL': 'http://disney.go.com/corporate/privacy/terms.html?ppLink=pp_wdig',
-        'trackingManagerConfig': PATH.swf + '/common/tracker.xml',
-        'whoAmI': CFG.whoAmI
-    },
-    'params': {
-        'allowFullscreen': true,
-        'allowScriptAccess': 'always',
-        'menu': false,
-        'quality': 'high',
-        'bgcolor': '#0A0C0E',
-        'scale': 'noScale'
-    }
+	'flashVars': {
+		'adultNewsletterID': CFG.newsletterID,
+		'api': CFG.api,
+		'assetsBaseUrl': CFG.assetsBaseUrl,
+		'assetServiceHost': CFG.assetServiceHost,
+		'autolog': CFG.dxdLogin + '?loginType=swid$#$cacheBust=true',
+		'carsServiceHost': CFG.assetServiceHost,
+		'chatPermissionUrl': CFG.chatPermissionUrl,
+		'childNewsletterID': '',
+		'countriesURL': PATH.swf + '/common/countries.xml',
+		'dontModifyCloseButton': true,
+		'dxdlogout': CFG.dxd + '/flashAPI/logout',
+		'DOBCookieTO': 30,
+		'loginTimeout': 30,
+		'forgotIDURL': CFG.register + '/recoverMemberNames?affiliateName=Disney_Cars&appRedirect=http%3A%2F%2Fworldofcars.go.com',
+		'forgotPasswordURL': CFG.register + '/recoverPassword?affiliateName=Disney_Cars&appRedirect=http%3A%2F%2Fworldofcars.go.com',
+		'gameLogin': CFG.login,
+		'IPDetectPath': '', // Don't think we need this. ( CFG.ssl ? 'https' : 'http' ) +'://tredir.go.com/capmon/GetDE',
+		'loaderSwfUrl': PATH.swf + '/car_f_gui_ldr_loader.swf',
+		'loadingAnimationURL': PATH.swf + '/car_f_gui_ldr_loader.swf',
+		'locale': CFG.locale,
+		'login': CFG.dxdLogin,
+		'logout': CFG.api + 'AccountLogoutRequest',
+		'newsletterID': CFG.newsletterID,
+		'parentGuide': RDR.parents,
+		'promotionName': CFG.promotionName,
+		'privacyPolicyURL': 'http://disney.go.com/corporate/privacy/pp_wdig.html',
+		'queueEntranceRequestUrl': CFG.queueEntranceRequestUrl,
+		'queueStatusRequestUrl': CFG.queueStatusRequestUrl,
+		'recoveryPasswordURL': CFG.register + '/recoverPassword?appRedirect=' + PATH.siteRoot,
+		'recoveryUsernameURL': CFG.register + '/recoverMemberNames?appRedirect=' + PATH.siteRoot,
+		'regConfig': PATH.swf + '/common/registration.xml',
+		'statesURL': PATH.swf + '/common/states.xml',
+		'templateId': CFG.templateId,
+		'termsOfUseURL': 'http://disney.go.com/corporate/privacy/terms.html?ppLink=pp_wdig',
+		'trackingManagerConfig': PATH.swf + '/common/tracker.xml',
+		'whoAmI': CFG.whoAmI
+	},
+	'params': {
+		'allowFullscreen': true,
+		'allowScriptAccess': 'always',
+		'menu': false,
+		'quality': 'high',
+		'bgcolor': '#0A0C0E',
+		'scale': 'noScale'
+	}
 };
 /*--------------------------------------------------------*/
 
 // RAMP Account Manager ----------------------------------*/
 RAMP.acm = {
-    'flashVars': jQuery.extend({}, RAMP.flashVars, {
-        'cancelCompleteOkURL': RDR.purchase,
-        'contentSwfUrl': 'car_f_gui_reg_accountManager.swf',
-        'heightUsedByLoginDialog': 580,
-        'membershipCardURL': RDR.purchase,
-        'purchaseURL': RDR.purchase,
-        'regWidgetCallback': 'WOC.launchGame()',
-        'skinPath': 'car_f_gui_reg_accountManager.swf',
-        'stringtable': 'stringtables/' + CFG.locale + '/global.json',
-        'widgetURL': RDR.manageAccount,
-        'widthUsedByLoginDialog': 870
-    }),
-    'params': jQuery.extend({}, RAMP.params, {
-        'base': PATH.swf + '/acm/',
-        'wmode': 'transparent'
-    })
+	'flashVars': jQuery.extend({}, RAMP.flashVars, {
+		'cancelCompleteOkURL': RDR.purchase,
+		'contentSwfUrl': 'car_f_gui_reg_accountManager.swf',
+		'heightUsedByLoginDialog': 580,
+		'membershipCardURL': RDR.purchase,
+		'purchaseURL': RDR.purchase,
+		'regWidgetCallback': 'WOC.launchGame()',
+		'skinPath': 'car_f_gui_reg_accountManager.swf',
+		'stringtable': 'stringtables/' + CFG.locale + '/global.json',
+		'widgetURL': RDR.manageAccount,
+		'widthUsedByLoginDialog': 870
+	}),
+	'params': jQuery.extend({}, RAMP.params, {
+		'base': PATH.swf + '/acm/',
+		'wmode': 'transparent'
+	})
 };
 /*--------------------------------------------------------*/
 
 // RAMP Purchase -----------------------------------------*/
 RAMP.purchase = {
-    'flashVars': jQuery.extend({}, RAMP.flashVars, {
-        'congratsEmailPath': CFG.dxd + '/util/beacon/purchaseEmailRedirect',
-        'congratsExitURL': PATH.siteRoot + '/welcome-member/',
-        'congratsRedirectURL': PATH.siteRoot + '/welcome-member/',
-        'contentSwfUrl': 'cars_purchasing_skin.swf',
-        'giftPurchaseURL': PATH.siteRoot + '/',
-        'kidsRulesURL': 'stringtables/en_US/kidsrules.xml',
-        'linkColor': '#FFFFFF',
-        'memberServiceURL': 'stringtables/' + CFG.locale + '/memberServiceAgreement.html',
-        'needParentExitURL': RDR.community,
-        'noCongratsRedirectURL': true,
-        'purConfirmCallback': 'onPurchaseComplete',
-        'playPageURL': RDR.play,
-        'regConfig': PATH.swf + '/purchasing/registration.xml',
-        'regWidgetURL': 'javascript:WOC.launchGame()',
-        'showPrepurchaseWarning': true,
-        'skipCongratsScreen': true,
-        'topDialogPadding': 50,
-        'topPadding': 0,
-        'width': 915,
-        'widgetURL': PATH.siteRootSecure + '/membership/purchase/'
-    }),
-    'params': jQuery.extend({}, RAMP.params, {
-        'base': PATH.swf + '/purchasing/',
-        'wmode': 'transparent'
-    })
+	'flashVars': jQuery.extend({}, RAMP.flashVars, {
+		'congratsEmailPath': CFG.dxd + '/util/beacon/purchaseEmailRedirect',
+		'congratsExitURL': PATH.siteRoot + '/welcome-member/',
+		'congratsRedirectURL': PATH.siteRoot + '/welcome-member/',
+		'contentSwfUrl': 'cars_purchasing_skin.swf',
+		'giftPurchaseURL': PATH.siteRoot + '/',
+		'kidsRulesURL': 'stringtables/en_US/kidsrules.xml',
+		'linkColor': '#FFFFFF',
+		'memberServiceURL': 'stringtables/' + CFG.locale + '/memberServiceAgreement.html',
+		'needParentExitURL': RDR.community,
+		'noCongratsRedirectURL': true,
+		'purConfirmCallback': 'onPurchaseComplete',
+		'playPageURL': RDR.play,
+		'regConfig': PATH.swf + '/purchasing/registration.xml',
+		'regWidgetURL': 'javascript:WOC.launchGame()',
+		'showPrepurchaseWarning': true,
+		'skipCongratsScreen': true,
+		'topDialogPadding': 50,
+		'topPadding': 0,
+		'width': 915,
+		'widgetURL': PATH.siteRootSecure + '/membership/purchase/'
+	}),
+	'params': jQuery.extend({}, RAMP.params, {
+		'base': PATH.swf + '/purchasing/',
+		'wmode': 'transparent'
+	})
 };
 /*--------------------------------------------------------*/
 
 // RAMP Registration -------------------------------------*/
 RAMP.registration = {
-    'flashVars': jQuery.extend({}, RAMP.flashVars, {
-        'contentSwfUrl': 'gui/car_f_gui_reg_registration.swf',
-        'disableAssetService': true,
-        'loginURL': CFG.login,
-        'registrationOnly': '',
-        'trackingManagerConfig': PATH.swf + '/reg/tracker.xml'
-    }),
-    'params': jQuery.extend({}, RAMP.params, {
-        'base': PATH.swf + '/reg/',
-        'bgColor': '#000000'
-    })
+	'flashVars': jQuery.extend({}, RAMP.flashVars, {
+		'contentSwfUrl': 'gui/car_f_gui_reg_registration.swf',
+		'disableAssetService': true,
+		'loginURL': CFG.login,
+		'registrationOnly': '',
+		'trackingManagerConfig': PATH.swf + '/reg/tracker.xml'
+	}),
+	'params': jQuery.extend({}, RAMP.params, {
+		'base': PATH.swf + '/reg/',
+		'bgColor': '#000000'
+	})
 };
 /*--------------------------------------------------------*/
