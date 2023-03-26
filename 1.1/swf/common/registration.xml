@@ -2,24 +2,24 @@
 <config>
 	<!-- Tea Templates -->
 	<flashAPI>
-		<login>https://dxd.sunrise.games/dxd/flashAPI/login</login>
-		<createAccount>https://dxd.sunrise.games/dxd/flashAPI/createAccount</createAccount>
-		<checkUsernameAvailability>https://dxd.sunrise.games/dxd/flashAPI/checkUsernameAvailability</checkUsernameAvailability>
-		<checkUsernameApproval>https://dxd.sunrise.games/dxd/flashAPI/checkUsernameApproval</checkUsernameApproval>
-		<checkValidationStatus>https://dxd.sunrise.games/dxd/flashAPI/checkValidationStatus</checkValidationStatus>
-		<submitAliasForApproval>https://dxd.sunrise.games/dxd/flashAPI/submitAliasForApproval</submitAliasForApproval>
-		<getFamilyStructure>https://dxd.sunrise.games/dxd/flashAPI/getFamilyStructure</getFamilyStructure>
-		<verifyAccountCredentials>https://dxd.sunrise.games/dxd/flashAPI/verifyAccountCredentials</verifyAccountCredentials>
-		<linkAccountToFamily>https://dxd.sunrise.games/dxd/flashAPI/linkAccountToFamily</linkAccountToFamily>
-		<removeAccountFromFamily>https://dxd.sunrise.games/dxd/flashAPI/removeAccountFromFamily</removeAccountFromFamily>
-		<updateAccount>https://dxd.sunrise.games/dxd/flashAPI/updateAccount</updateAccount>
-		<lookupAccount>https://dxd.sunrise.games/dxd/flashAPI/lookupAccount</lookupAccount>
-		<getAllNewsletterMetadata>https://dxd.sunrise.games/dxd/flashAPI/getAllNewsletterMetadata</getAllNewsletterMetadata>
-		<notifyParent>https://dxd.sunrise.games/dxd/flashAPI/notifyParent</notifyParent>
-		<authenticateAndUpdateOptins>https://dxd.sunrise.games/dxd/flashAPI/authenticateAndUpdateOptins</authenticateAndUpdateOptins>
-		<sendChatPermissionEmails>https://dxd.sunrise.games/dxd/flashAPI/sendChatPermissionEmails</sendChatPermissionEmails>
-		<getTermsOfUseText>https://dxd.sunrise.games/dxd/flashAPI/getTermsOfUseText</getTermsOfUseText>
-		<logout>https://dxd.sunrise.games/dxd/flashAPI/logout</logout>
+		<login>http://localhost:8013/dxd/flashAPI/login</login>
+		<createAccount>http://localhost:8013/dxd/flashAPI/createAccount</createAccount>
+		<checkUsernameAvailability>http://localhost:8013/dxd/flashAPI/checkUsernameAvailability</checkUsernameAvailability>
+		<checkUsernameApproval>http://localhost:8013/dxd/flashAPI/checkUsernameApproval</checkUsernameApproval>
+		<checkValidationStatus>http://localhost:8013/dxd/flashAPI/checkValidationStatus</checkValidationStatus>
+		<submitAliasForApproval>http://localhost:8013/dxd/flashAPI/submitAliasForApproval</submitAliasForApproval>
+		<getFamilyStructure>http://localhost:8013/dxd/flashAPI/getFamilyStructure</getFamilyStructure>
+		<verifyAccountCredentials>http://localhost:8013/dxd/flashAPI/verifyAccountCredentials</verifyAccountCredentials>
+		<linkAccountToFamily>http://localhost:8013/dxd/flashAPI/linkAccountToFamily</linkAccountToFamily>
+		<removeAccountFromFamily>http://localhost:8013/dxd/flashAPI/removeAccountFromFamily</removeAccountFromFamily>
+		<updateAccount>http://localhost:8013/dxd/flashAPI/updateAccount</updateAccount>
+		<lookupAccount>http://localhost:8013/dxd/flashAPI/lookupAccount</lookupAccount>
+		<getAllNewsletterMetadata>http://localhost:8013/dxd/flashAPI/getAllNewsletterMetadata</getAllNewsletterMetadata>
+		<notifyParent>http://localhost:8013/dxd/flashAPI/notifyParent</notifyParent>
+		<authenticateAndUpdateOptins>http://localhost:8013/dxd/flashAPI/authenticateAndUpdateOptins</authenticateAndUpdateOptins>
+		<sendChatPermissionEmails>http://localhost:8013/dxd/flashAPI/sendChatPermissionEmails</sendChatPermissionEmails>
+		<getTermsOfUseText>http://localhost:8013/dxd/flashAPI/getTermsOfUseText</getTermsOfUseText>
+		<logout>http://localhost:8013/dxd/flashAPI/logout</logout>
 		<!-- purchasing -->
 		<creditCardValidation>https://register.go.com/dxd/validation/authorize</creditCardValidation>
 		<lookupSubscriptions>https://register.go.com/commerce/flashapi/lookupSubscriptions</lookupSubscriptions>
@@ -37,7 +37,7 @@
 		<disableAutoRenew>https://register.go.com/commerce/flashapi/disableAutoRenew</disableAutoRenew>
 	    <!-- /purchasing -->
 		<!-- whoami service -->
-		<whoami>https://dxd.sunrise.games/carsds/api/WhoAmIRequest</whoami>
+		<whoami>http://localhost:8013/carsds/api/WhoAmIRequest</whoami>
 		<!-- /whoami service -->
 	</flashAPI>
 
