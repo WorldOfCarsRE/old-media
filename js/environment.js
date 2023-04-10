@@ -17,7 +17,7 @@ PATH.siteRoot = (CFG.ssl ? 'https://woc.sunrise.games' : 'http://localhost');
 
 /* Config ------------------------------------------------*/
 CFG.appsSecure = 'https://dxd.sunrise.games'; // http on dev, https on qa/live
-CFG.apps = CFG.ssl ? CFG.appsSecure : 'http://localhost:8013';
+CFG.apps = CFG.ssl ? CFG.appsSecure : 'http://localhost';
 CFG.appsProxy = PATH.siteRoot + '/apps';
 CFG.carsDSSecure = CFG.appsSecure + '/carsds';
 CFG.carsDS = CFG.apps + '/carsds';
@@ -26,7 +26,7 @@ CFG.apiSecure = CFG.carsDSSecure + '/api/';
 CFG.api = CFG.carsDS + '/api/';
 CFG.apiProxy = CFG.carsDSProxy + '/api/';
 CFG.dxdSecure = 'https://dxd.sunrise.games/dxd'; // live = apps.dxd.go.com
-CFG.dxd = CFG.ssl ? CFG.dxdSecure : 'http://localhost:8013/dxd'; // live = apps.dxd.go.com
+CFG.dxd = CFG.ssl ? CFG.dxdSecure : 'http://localhost/dxd'; // live = apps.dxd.go.com
 CFG.swfBaseUrl = '';
 CFG.clientVersion = '1.1'; // TODO: Real version
 

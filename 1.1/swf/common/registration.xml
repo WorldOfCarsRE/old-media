@@ -2,24 +2,24 @@
 <config>
 	<!-- Tea Templates -->
 	<flashAPI>
-		<login>http://localhost:8013/dxd/flashAPI/login</login>
-		<createAccount>http://localhost:8013/dxd/flashAPI/createAccount</createAccount>
-		<checkUsernameAvailability>http://localhost:8013/dxd/flashAPI/checkUsernameAvailability</checkUsernameAvailability>
-		<checkUsernameApproval>http://localhost:8013/dxd/flashAPI/checkUsernameApproval</checkUsernameApproval>
-		<checkValidationStatus>http://localhost:8013/dxd/flashAPI/checkValidationStatus</checkValidationStatus>
-		<submitAliasForApproval>http://localhost:8013/dxd/flashAPI/submitAliasForApproval</submitAliasForApproval>
-		<getFamilyStructure>http://localhost:8013/dxd/flashAPI/getFamilyStructure</getFamilyStructure>
-		<verifyAccountCredentials>http://localhost:8013/dxd/flashAPI/verifyAccountCredentials</verifyAccountCredentials>
-		<linkAccountToFamily>http://localhost:8013/dxd/flashAPI/linkAccountToFamily</linkAccountToFamily>
-		<removeAccountFromFamily>http://localhost:8013/dxd/flashAPI/removeAccountFromFamily</removeAccountFromFamily>
-		<updateAccount>http://localhost:8013/dxd/flashAPI/updateAccount</updateAccount>
-		<lookupAccount>http://localhost:8013/dxd/flashAPI/lookupAccount</lookupAccount>
-		<getAllNewsletterMetadata>http://localhost:8013/dxd/flashAPI/getAllNewsletterMetadata</getAllNewsletterMetadata>
-		<notifyParent>http://localhost:8013/dxd/flashAPI/notifyParent</notifyParent>
-		<authenticateAndUpdateOptins>http://localhost:8013/dxd/flashAPI/authenticateAndUpdateOptins</authenticateAndUpdateOptins>
-		<sendChatPermissionEmails>http://localhost:8013/dxd/flashAPI/sendChatPermissionEmails</sendChatPermissionEmails>
-		<getTermsOfUseText>http://localhost:8013/dxd/flashAPI/getTermsOfUseText</getTermsOfUseText>
-		<logout>http://localhost:8013/dxd/flashAPI/logout</logout>
+		<login>http://localhost/dxd/flashAPI/login</login>
+		<createAccount>http://localhost/dxd/flashAPI/createAccount</createAccount>
+		<checkUsernameAvailability>http://localhost/dxd/flashAPI/checkUsernameAvailability</checkUsernameAvailability>
+		<checkUsernameApproval>http://localhost/dxd/flashAPI/checkUsernameApproval</checkUsernameApproval>
+		<checkValidationStatus>http://localhost/dxd/flashAPI/checkValidationStatus</checkValidationStatus>
+		<submitAliasForApproval>http://localhost/dxd/flashAPI/submitAliasForApproval</submitAliasForApproval>
+		<getFamilyStructure>http://localhost/dxd/flashAPI/getFamilyStructure</getFamilyStructure>
+		<verifyAccountCredentials>http://localhost/dxd/flashAPI/verifyAccountCredentials</verifyAccountCredentials>
+		<linkAccountToFamily>http://localhost/dxd/flashAPI/linkAccountToFamily</linkAccountToFamily>
+		<removeAccountFromFamily>http://localhost/dxd/flashAPI/removeAccountFromFamily</removeAccountFromFamily>
+		<updateAccount>http://localhost/dxd/flashAPI/updateAccount</updateAccount>
+		<lookupAccount>http://localhost/dxd/flashAPI/lookupAccount</lookupAccount>
+		<getAllNewsletterMetadata>http://localhost/dxd/flashAPI/getAllNewsletterMetadata</getAllNewsletterMetadata>
+		<notifyParent>http://localhost/dxd/flashAPI/notifyParent</notifyParent>
+		<authenticateAndUpdateOptins>http://localhost/dxd/flashAPI/authenticateAndUpdateOptins</authenticateAndUpdateOptins>
+		<sendChatPermissionEmails>http://localhost/dxd/flashAPI/sendChatPermissionEmails</sendChatPermissionEmails>
+		<getTermsOfUseText>http://localhost/dxd/flashAPI/getTermsOfUseText</getTermsOfUseText>
+		<logout>http://localhost/dxd/flashAPI/logout</logout>
 		<!-- purchasing -->
 		<creditCardValidation>https://register.go.com/dxd/validation/authorize</creditCardValidation>
 		<lookupSubscriptions>https://register.go.com/commerce/flashapi/lookupSubscriptions</lookupSubscriptions>
@@ -37,7 +37,7 @@
 		<disableAutoRenew>https://register.go.com/commerce/flashapi/disableAutoRenew</disableAutoRenew>
 	    <!-- /purchasing -->
 		<!-- whoami service -->
-		<whoami>http://localhost:8013/carsds/api/WhoAmIRequest</whoami>
+		<whoami>http://localhost/carsds/api/WhoAmIRequest</whoami>
 		<!-- /whoami service -->
 	</flashAPI>
 
